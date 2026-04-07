@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rudraksha Commercial Kitchen Burners Brochure</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+   body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #ffe4e1;
+        color: #000;
+    }
+    .container {
+        width: 95%;
+        max-width: 1200px;
+        margin: auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Logo - 40% Bigger, Sharp Corners */
+    .logo {
+        width: 112px; 
+        display: block;
+        margin: 0 auto;
+        border-radius: 0; 
+    }
+
+    /* Fixed the bracket error in your previous version */
+    .vr-manufacturer {
+        background: #fff;
+        padding: 30px;
+        margin: 0 auto 30px auto;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        max-width: 800px;
+    }
+    .vr-manufacturer h3 {
+        margin: 5px 0;
+        font-size: 1.4em;
+        color: #000;
+    }
+
+    /* Products Container: The logic for 2-on-1 */
+    /* --- Products Section Cleanup --- */
+.products {
+    display: flex;
+    justify-content: center; 
+    gap: 25px;
+    margin-bottom: 50px;
+    flex-wrap: wrap; /* Ye zaroori hai teesre card ko niche lane ke liye */
+    width: 100%;
+}
+
+.product-card {
+    background: #fff;
+    /* 320px width rakhi hai taaki 1200px screen par 3 cards aram se aa jayein, 
+       aur 700px screen par 2 cards auto-adjust ho jayein */
+    flex: 0 1 320px; 
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card:hover { 
+    transform: translateY(-8px); 
+    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
+.product-card img { 
+    width: 100%; 
+    height: auto;
+    border-radius: 12px; 
+    margin-bottom: 15px; 
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 650px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-card {
+        width: 100%; /* Mobile par full width card */
+        max-width: 350px;
+    }
+}
+    /* Tagline, Buttons, & Footer */
+    .tagline {
+        font-size: 1.5em; font-weight: bold; display: inline-block; padding: 5px 15px;
+        background: linear-gradient(270deg, #ff69b4, #ffc0cb, #ff69b4);
+        background-size: 600% 100%; -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; animation: slideHighlight 3s linear infinite;
+        margin-bottom: 40px;
+    }
+    @keyframes slideHighlight { 0% { background-position: 0% 0%; } 100% { background-position: 100% 0%; } }
+    .price { border: 2px solid #ff69b4; border-radius: 8px; padding: 8px; font-weight: bold; margin: 15px 0; }
+    .buy-btn { background: #ff69b4; color: #fff; border: none; padding: 12px; border-radius: 8px; cursor: pointer; font-weight: bold; width: 100%; }
+    .footer { padding: 30px; }
+    .footer-tab { display: inline-block; background: #fff; padding: 12px 25px; border-radius: 50px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+    .footer-tab a { text-decoration: none; color: #000; font-weight: bold; margin: 0 10px; }
+    .query-popup { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff0f5; padding: 25px; border-radius: 15px; width: 90%; max-width: 400px; box-shadow: 0 20px 40px rgba(0,0,0,0.3); z-index: 1000; }
+    .query-popup input { width: 100%; margin: 8px 0; padding: 10px; border-radius: 8px; border: 1px solid #ccc; box-sizing: border-box; }
+    
+
+    /* Products */
+   .products {
+    display: flex;
+    justify-content: center; /* This centers the items in the row */
+    gap: 20px;
+    margin-bottom: 50px;
+    flex-wrap: wrap; /* This allows the 3rd card to move to the next line */
+}
+
+.product-card {
+    background: #fff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+    position: relative;
+    text-align: center;
+    /* This ensures that if a card is alone on a row, it stays centered */
+    flex-grow: 0; 
+}
+    .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+    }
+    .product-card img {
+        width: 100%;
+        border-radius: 15px;
+        margin-bottom: 15px;
+    }
+    .product-card h4 {
+        font-size: 1.3em;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    .price {
+        background: #fff;
+        border: 2px solid #ff69b4;
+        border-radius: 8px;
+        padding: 8px 12px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+    .buy-btn {
+        background: #ff69b4;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .features {
+        text-align: left;
+        margin-top: 10px;
+    }
+    .features li {
+        margin-bottom: 6px;
+    }
+
+    /* Why Choose Us */
+    .why-choose {
+        margin: 50px auto;
+        text-align: center;
+        max-width: 600px; /* Box ki width control karne ke liye */
+        border: 2px solid #000; /* Black Border */
+        padding: 30px;
+        border-radius: 15px;
+        background-color: #fff; /* Box ke andar ka color white */
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .why-choose h3 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 1.8em;
+        text-decoration: underline;
+    }
+    .why-choose ul {
+        list-style: none;
+        padding: 0;
+        display: block;
+        text-align: left;
+        margin: 0 auto;
+        display: inline-block; /* List ko center karne ke liye */
+    }
+    .why-choose li {
+        margin: 12px 0;
+        font-size: 1.1em;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .why-choose li::before {
+        content: '✔';
+        color: #ff69b4;
+        font-weight: bold;
+    }
+
+    /* Footer */
+    .footer {
+        background-color: #ffe4e1;
+        padding: 20px;
+        position: relative;
+    }
+    .footer-line {
+        width: 95%;
+        height: 3px;
+        background: linear-gradient(90deg, gold, #ffd700);
+        margin: 0 auto 15px auto;
+    }
+    .footer-tab {
+        display: inline-block;
+        background: #fff;
+        padding: 10px 20px;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .footer-tab a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        margin: 0 10px;
+    }
+
+    /* Query form popup */
+    .query-popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff0f5;
+        padding: 20px;
+        border-radius: 12px;
+        width: 90%;
+        max-width: 400px;
+        box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+        z-index: 1000;
+    }
+    .query-popup input {
+        width: 95%;
+        margin: 5px 0;
+        padding: 8px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }
+    .popup-close {
+        background: #ff69b4;
+        color: #fff;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 6px;
+        cursor: pointer;
+        float: right;
+    }
+
+    @media screen and (max-width: 768px) {
+        .products {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+
+    <!-- Logo & Header -->
+    <img src="ignixa.jpeg" alt="ignixa Logo" class="logo">    <h1>Rudraksha</h1>
+    <h2>Presents</h2>
+    <h2>Commercial Kitchen Burners</h2>
+    <div class="tagline">Heat Up Your Business</div>
+
+    <!-- VR Leading Manufacturer -->
+    <div class="vr-manufacturer">
+        <h3>We are a leading manufacturer of innovative and energy-efficient kitchen appliances. Our mission is to bring advanced technology, safety, and convenience into every home. With a focus on quality and performance, we design products that make cooking faster, safer, and more efficient.</h3>
+    </div>
+
+    <!-- Products -->
+  <div class="products">
+    <div class="product-card">
+        <img src="single-burner.jpg" alt="Single Burner">
+        <h3>Single Burner</h3>
+        <button class="buy-btn" onclick="openPopup('single')">Inquiry Now</button>
+    </div>
+
+    <div class="product-card">
+        <img src="double-burner.jpg" alt="Double Burner">
+        <h3>Double Burner</h3>
+        <button class="buy-btn" onclick="openPopup('double')">Inquiry Now</button>
+    </div>
+
+    <div class="product-card">
+        <img src="triple-burner.jpg" alt="Triple Burner">
+        <h3>Triple Burner</h3>
+        <button class="buy-btn" onclick="openPopup('triple')">Inquiry Now</button>
+    </div>
+</div>
+
+<div class="query-popup" id="queryPopup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 25px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); z-index: 1000; width: 90%; max-width: 400px; color: #000; font-family: sans-serif;">
+    <button type="button" onclick="closePopup()" style="float: right; border: none; background: none; font-size: 28px; cursor: pointer; color: #666;">&times;</button>
+    
+    <form id="combinedForm" action="https://formspree.io/f/mgoprzoe" method="POST">
+        
+        <div id="step1">
+            <h3 style="color: #d32f2f; margin-bottom: 20px; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px;">Step 1: Selection</h3>
+            <label style="font-weight: bold; display: block; margin-bottom: 5px;">Wattage:</label>
+            <select name="wattage" id="wattage" style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;"></select>
+
+            <label style="font-weight: bold; display: block; margin-bottom: 5px;">Type:</label>
+            <select name="type" id="type" style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+                <option value="Stand">Stand</option>
+                <option value="Tabletop">Tabletop</option>
+            </select>
+
+            <label style="font-weight: bold; display: block; margin-bottom: 5px;">Extra Accessories:</label>
+            <textarea name="extra" id="extra" placeholder="Describe any extra needs..." style="width: 100%; padding: 10px; height: 60px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; margin-bottom: 15px;"></textarea>
+            
+            <button type="button" onclick="goToStep(2)" style="width: 100%; background: #000; color: #fff; padding: 12px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; font-weight: bold;">Next</button>
+        </div>
+
+        <div id="step2" style="display: none;">
+            <h3 style="color: #d32f2f; margin-bottom: 20px; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px;">Step 2: Details</h3>
+            <input type="text" name="company" id="company" placeholder="Company Name *" required style="width: 100%; padding: 12px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+            <input type="text" name="person" id="person" placeholder="Contact Person Name *" required style="width: 100%; padding: 12px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+            <input type="tel" name="phone" id="phone" placeholder="Phone Number *" required style="width: 100%; padding: 12px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+            <input type="text" name="gst" id="gst" placeholder="GST Number (Optional)" style="width: 100%; padding: 12px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+            <input type="email" name="email" id="email" placeholder="Email Address (Optional)" style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
+            
+            <button type="button" onclick="goToStep(3)" style="width: 100%; background: #d32f2f; color: #fff; padding: 12px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; font-weight: bold;">Submit Details</button>
+        </div>
+
+        <div id="step3" style="display: none; text-align: center;">
+            <h3 style="color: #d32f2f; margin-bottom: 20px; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px;">Final Step</h3>
+            <p style="margin-bottom: 25px; color: #444;">Please select your preferred method to receive the quote:</p>
+            
+            <button type="button" onclick="handleFinalSubmission('whatsapp')" style="width: 100%; background: #25D366; color: white; padding: 15px; border: none; border-radius: 8px; cursor: pointer; margin-bottom: 15px; font-weight: bold; font-size: 16px; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                Instant Quote on WhatsApp
+            </button>
+            
+            <button type="button" onclick="handleFinalSubmission('mail')" style="width: 100%; background: #007bff; color: white; padding: 15px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 16px;">
+                Receive Quote via Mail
+            </button>
+        </div>
+    </form>
+</div>
+
+<script>
+let currentBurner = '';
+
+function openPopup(burnerType) {
+    currentBurner = burnerType;
+    const wattageSelect = document.getElementById('wattage');
+    wattageSelect.innerHTML = '';
+    
+    let options = (burnerType === 'single') ? ['3 kW', '6 kW', '9 kW'] :
+                  (burnerType === 'double') ? ['6 kW (3+3)', '12 kW (6+6)', '18 kW (9+9)'] :
+                  ['9 kW (3+3+3)', '18 kW (6+6+6)', '27 kW (9+9+9)'];
+
+    options.forEach(opt => {
+        let el = document.createElement('option');
+        el.value = opt; el.textContent = opt;
+        wattageSelect.appendChild(el);
+    });
+
+    goToStep(1);
+    document.getElementById('queryPopup').style.display = 'block';
+}
+
+function closePopup() { document.getElementById('queryPopup').style.display = 'none'; }
+
+function goToStep(step) {
+    // Validation before leaving Step 2
+    if (step === 3) {
+        const company = document.getElementById('company').value.trim();
+        const person = document.getElementById('person').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        
+        if (!company || !person || !phone) {
+            alert("Please enter Company, Contact Person, and Phone Number.");
+            return;
+        }
+    }
+    
+    document.getElementById('step1').style.display = (step === 1) ? 'block' : 'none';
+    document.getElementById('step2').style.display = (step === 2) ? 'block' : 'none';
+    document.getElementById('step3').style.display = (step === 3) ? 'block' : 'none';
+}
+async function handleFinalSubmission(method) {
+    const form = document.getElementById('combinedForm');
+    const formData = new FormData(form);
+    
+    // Formspree submission
+    formData.append('Selected_Method', method);
+    formData.append('Inquiry_Product', currentBurner.toUpperCase() + " Burner");
+    fetch(form.action, { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } });
+
+    if (method === 'whatsapp') {
+        const msg = `*NEW INQUIRY: RUDRAKSHA*%0A` +
+                    `----------------------------%0A` +
+                    `*Product:* ${currentBurner.toUpperCase()} BURNER%0A` +
+                    `*Wattage:* ${document.getElementById('wattage').value}%0A` +
+                    `*Type:* ${document.getElementById('type').value}%0A` +
+                    `*Extra:* ${document.getElementById('extra').value || 'None'}%0A` +
+                    `----------------------------%0A` +
+                    `*Company:* ${document.getElementById('company').value}%0A` +
+                    `*Person:* ${document.getElementById('person').value}%0A` +
+                    `*Phone:* ${document.getElementById('phone').value}`;
+        
+        window.open(`https://wa.me/919810535852?text=${msg}`, '_blank');
+    } else {
+        alert("Our executive will connect with you via email shortly.");
+    }
+    
+    closePopup();
+    form.reset();
+}
+window.onclick = function(event) {
+    let popup = document.getElementById('queryPopup');
+    if (event.target == popup) {
+        closePopup();
+    }
+}
+</script>
+
+</body>
+</html>
